@@ -1,7 +1,7 @@
 // STUDY
 // 1. Variable swap
 // Swapping variable is to exchange the values of two variable so that at the end, one variable contains the value of the other
-// Google ‘JS swap variables’ to learn about at least 2 ways to perform this task, write at least 2 examples to demonstrate you have acquired them
+// Google 'JS swap variables’ to learn about at least 2 ways to perform this task, write at least 2 examples to demonstrate you have acquired them
     // +) Temporary variable
     let a = 5;
     let b = 6;
@@ -41,27 +41,27 @@
     let items = ['Jeans', 'T-shirt', 'Socks'];
     while(true){
         let option = prompt('Hi there, welcome to shop admin panel, what do you want (C, R, U, D)?');
-        if(option == 'R'){
+        if((option == 'R') || (option == 'r')){
             console.log('The current items are:')
             for (var i = 0; i < items.length; i++){
                 console.log(`${i + 1}. ${items[i]}`);
             }
-        }else if(option == 'C'){
+        }else if((option == 'C') || (option == 'c')){
             createItem = prompt('Enter the name of the new item');
             items.push(createItem);
             alert('Done');
-        }else if(option == 'U'){
+        }else if((option == 'U') || (option == 'u')){
             updateIndex = prompt('Enter the position you want to update');
             updateItem = prompt('Enter the new name');
             items[updateIndex] = updateItem;
             alert('Done');
-        }else if(option == 'D'){
+        }else if((option == 'D') || (option == 'd')){
             deleteIndex = prompt('Enter the position you want to delete');
             items.splice(deleteIndex,1);
             alert('Done');
         }else{
             alert('This command is not supported');
-            break
+            break;
         }
     }
 
@@ -80,7 +80,7 @@
     let sequence = number.split(',');
     let min = Number(sequence[0]);
     for(var i = 0; i < sequence.length; i++){
-        if(Number(sequence[i]) < Number(sequence[0])){
+        if(Number(sequence[i]) < min){
             min = Number(sequence[i]);
         }
     }
@@ -89,14 +89,17 @@
 // 7. Create an array containing at least 5 numbers, then ask users enter a number, perform a search to look for the number in the array, if the number is found, tell user that with the index of it in the array, if not, also tell them so
     const arr = [3, 4, 6, -9, 10, -88, 2];
     let number = Number(prompt('Enter a number'));
+    let count = 0;
     for(var i = 0; i < arr.length; i++){
         if(number == arr[i]){
             alert(`${number} is FOUND in my array at index ${i}`);
+            count++;
             break;
-        } else {
-            alert(`${number} is NOT found in my array`);
-        }
+        }   
     }
+    if(count == 0){
+        alert(`${number} is NOT found in my array`); 
+    }  
 
 // 8. You are a shepherd who owns a flock of sheep. Each of your sheep of your flock has varied sizes:
     // 8.1. Create an array to represent the sizes of your flock, and log all of your flock size, expected screen output:

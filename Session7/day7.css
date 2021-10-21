@@ -1,0 +1,50 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.notice {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    size: 20px;
+    align-items: center;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    background-color: rgb(190, 114, 0);
+}
+.header__logo {
+    flex: 30%;
+    align-items: center;
+}
+.header__search {
+    flex: 70%;
+    text-align: right;
+}
+
+.header__button {
+    width: 60px;
+    height: 60px;
+}
+
+.age {
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.empires {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main > div {
+    padding: 10px;
+}

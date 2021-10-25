@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="day8.js"></script>
+</head>
+<body>
+    <!-- 1. insertAdjacentHTML first parameter is the position where you put the new HTML into the container
+    Read this documentation, then read the following code
+    HTML File: -->
+    <ul id="list"></ul>
+
+    <!-- 4. Given the following HTML
+    You can get DOM (Read) by tag name using getElementsByTagName function, the result you get is NOT a single HTMLElement but a HTMLCollection,
+    which can be treated as Array (you can use indexing [], for statement and length with it). Refer to this link. -->   
+    <ul>
+        <li>News</li>
+        <li>Articles</li>
+        <li>Blog</li>
+    <ul>
+
+    <!-- 5. You can get DOM (Read) by class name using getElementsByClassName function. The result you get, again, is NOT a single HTMLElement by a HTMLCollection.
+    Refer to this link.
+    Given the following HTML -->    
+    <div>
+        <div class="singer">James Bay</div>
+        <div class="singer">Nate Ruess</div>
+        <div class="singer">Ed Sheeran</div>
+        <div class="singer">Steve Garrigan</div>
+    <div>
+    
+    <!-- 6. Learn how to remove (Delete) an HTMLElement using HTMLElement.remove() function, refer to this -->
+    <div id='delete'>Click here to use HTMLElement.remove()</div>
+    <br><br>
+
+    <!-- 7. -->   
+    <button id='button 1'> Button 1</button>
+    <button id='button 2'> Button 2</button>
+    <br><br>
+
+    <!-- 8. Write a function, using alert to show your name and one thing you wish to do this year -->
+    <button onclick="nguyenDucTung();">8</button>
+    <br><br>
+</body>
+</html>

@@ -137,7 +137,7 @@ function modalSignUpOnclickCallback() {
     if (passwordInput.value != repeatPasswordInput.value ||
         nameInput.value == `` || passwordInput.value == `` || repeatPasswordInput.value == `` ||
         nameInput.value == null) {
-        modalSignUpStatusTitle.textContent = `Nhập thiếu thông tin! Bạn vui lòng nhập lại!`;
+        modalSignUpStatusTitle.textContent = `Nhập sai hoặc thiếu thông tin! Bạn vui lòng nhập lại!`;
         modalSignUpStatusTitle.style.color = `red`;
         passwordInput.value = null;
         repeatPasswordInput.value = null;
@@ -208,7 +208,7 @@ function modalSignInOnclickCallback() {
         modalSignIn.style.display = `none`;
         closeNav();
     } else {
-        modalSignInStatusTitle.textContent = `Nhập sai thông tin! Bạn vui lòng nhập lại`;
+        modalSignInStatusTitle.textContent = `Nhập sai hoặc thiếu thông tin! Bạn vui lòng nhập lại`;
         modalSignInStatusTitle.style.color = `red`;
         modalNameInput.value = null;
         modalPasswordInput.value = null;

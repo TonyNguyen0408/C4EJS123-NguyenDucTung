@@ -10,7 +10,6 @@ window.onclick = function(event) {
 // Phần tiêu dề chào mừng
 let welcomeTitle = document.getElementById(`welcome_title`);
 let mainPageUrl = `project.html`;
-
 welcomeTitle.onclick = () => {
     location.href = mainPageUrl;
 }
@@ -111,7 +110,6 @@ function signIn(index) {
     signUpBtn.style.display = `none`;
     signOutBtn.style.display = `block`;
     sideName.textContent = usersArr[index].user_name;
-    // document.getElementById(`history_btn`).style.display = `block`;
     setUserSignInIndex(index);
     console.log(usersArr);
 }
@@ -122,16 +120,9 @@ function signOut() {
     signOutBtn.style.display = `none`;
     sideName.textContent = `no name`;
     welcomeTitle.textContent = `Chào mừng bạn đến với TTAD. Xin hãy vui lòng đăng nhập`;
-    document.getElementById(`history_btn`).style.display = `none`;
     setUserSignInIndex(-1);
 }
-
-function closeNavigationWhenClickSignOut() {
-    closeNav();
-}
-
 signOutBtn.addEventListener(`click`, signOut);
-signOutBtn.addEventListener(`click`, closeNavigationWhenClickSignOut);
 
 function modalSignUpOnclickCallback() {
     if (passwordInput.value != repeatPasswordInput.value ||
@@ -158,7 +149,6 @@ function modalSignUpOnclickCallback() {
     passwordInput.value = null;
     repeatPasswordInput.value = null;
     modalSignUp.style.display = `none`;
-    closeNav();
 }
 modalSignUpBtn.addEventListener(`click`, modalSignUpOnclickCallback);
 
@@ -206,7 +196,6 @@ function modalSignInOnclickCallback() {
         modalNameInput.value = null;
         modalPasswordInput.value = null;
         modalSignIn.style.display = `none`;
-        closeNav();
     } else {
         modalSignInStatusTitle.textContent = `Nhập sai hoặc thiếu thông tin! Bạn vui lòng nhập lại`;
         modalSignInStatusTitle.style.color = `red`;

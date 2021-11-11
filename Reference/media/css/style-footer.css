@@ -1,0 +1,78 @@
+/* footer section plus */
+
+.bottom_layout {
+    position: relative;
+    padding-left: 5%;
+}
+
+.bottom_layout p {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+}
+
+.bottom_layout p:nth-child(2) {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+}
+
+.bottom_layout p:nth-child(3) {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 80px;
+}
+
+.bottom_layout p:nth-child(4) {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 140px;
+}
+
+.bottom_layout img {
+    width: 30px;
+    position: absolute;
+    top: 200px;
+}
+
+.bottom_layout [alt="facebook"] {
+    left: 60px;
+}
+
+.bottom_layout [alt="twitter"] {
+    left: 110px;
+}
+
+.bottom_layout [alt="instagram"] {
+    left: 160px;
+}
+
+.bottom_layout [alt="about_us"] {
+    width: 9%;
+    top: 40px;
+    right: 60px;
+}
+
+.bottom_layout a {
+    color: white;
+    position: absolute;
+    top: 165px;
+    right: 65px;
+    font-size: 20px;
+}
+
+.footer {
+    background: black;
+    height: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width:700px) {
+    .bottom_layout [alt="about_us"] {
+        display: none;
+    }
+}

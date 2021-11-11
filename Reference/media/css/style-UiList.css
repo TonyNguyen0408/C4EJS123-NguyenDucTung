@@ -1,0 +1,313 @@
+/* brand name / p tag section  */
+
+.content div .brand_name {
+    margin-right: 1% !important;
+    padding-left: 20px;
+    padding-block-start: 21px;
+    padding-block-end: 21px;
+    font-size: 17px;
+    font-weight: bold;
+    background: white;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    margin: 0px;
+}
+
+
+/* more info section  */
+
+.modal_more_info {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    padding-top: 30px;
+}
+
+.modal_more_info .container {
+    width: 700px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 5% auto 15% auto;
+    border-radius: 15px;
+    padding: 16px;
+    position: relative;
+}
+
+.modal_more_info .container h3,
+.modal_more_info .container h2 {
+    color: rgb(124, 25, 0);
+    text-align: center;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+.flex_pair {
+    display: flex;
+}
+
+.padding10_0 {
+    padding: 8px 0px;
+}
+
+.info {
+    width: 50%;
+}
+
+.info_value {
+    width: 50%;
+    color: teal;
+}
+
+.info_block {
+    display: flex;
+    height: max-content;
+    width: 100%;
+}
+
+.info_image {
+    display: block;
+    width: 55%;
+}
+
+.info_image img {
+    width: 90%;
+}
+
+.info_text {
+    display: block;
+    width: 45%;
+}
+
+.modal_more_info .container .more_info_cancel_button {
+    outline: none;
+    width: 250px;
+    margin: 0px;
+    padding: 14px 20px;
+    border-radius: 15px;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    left: 34%;
+    background-color: crimson;
+    transition: background-color .5s;
+}
+
+.modal_more_info .container .more_info_cancel_button:hover {
+    background-color: black;
+}
+
+
+/* ui list section */
+
+.home_product_items {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.home_product_items .home_product_items_feature {
+    width: 20%;
+    height: 350px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    background: rgb(255, 255, 255);
+}
+
+.home_product_items li .home_product_items_feature_left {
+    width: 50%;
+}
+
+.home_product_items li .home_product_items_name {
+    text-align: center;
+    padding-top: 13px;
+    color: rgb(100, 46, 14);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.home_product_items li .home_product_items_name:hover {
+    color: rgb(184, 153, 19);
+}
+
+.home_product_items li .home_product_items_add {
+    margin-top: 5px;
+    height: 20%;
+    display: grid;
+}
+
+.home_product_items li .home_product_items_add button {
+    width: 140px;
+    border-radius: 15px;
+    background-color: black;
+    margin: auto;
+    padding: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255);
+    transition: background-color .5s;
+    transition: color .5s;
+    opacity: 1;
+    outline: none;
+}
+
+.home_product_items li .home_product_items_add button:hover {
+    background-color: orange;
+    color: black;
+}
+
+.home_product_items li .home_product_items_add button:active {
+    background-color: green;
+}
+
+.home_product_items li .home_product_items_detail {
+    height: 7%;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    color: teal;
+    transition: color .5s;
+}
+
+.home_product_items li .home_product_items_detail:hover {
+    color: yellowgreen;
+}
+
+.home_product_items .home_product_items_feature {
+    width: 33%;
+    background: rgb(255, 255, 255);
+    display: flex;
+}
+
+.home_product_items .home_product_items_feature .home_product_items_feature_right_list {
+    text-align: center;
+    padding-left: 17px;
+    list-style-type: disc;
+    font-size: 15px;
+}
+
+.home_product_items .home_product_items_feature div {
+    text-align: center;
+    position: relative;
+}
+
+.product_info_title {
+    color: rgb(100, 46, 14);
+    background: rgb(255, 217, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    width: 70%;
+    position: relative;
+    left: 9%;
+}
+
+.product_info_title:hover {
+    color: rgb(209, 162, 34);
+}
+
+.home_product_items .home_product_items_feature div .product_price_text {
+    position: absolute;
+    bottom: 5px;
+    left: 2%;
+    text-align: center;
+    color: rgb(199, 19, 19);
+    background: rgb(240, 239, 233);
+    border-radius: 15px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.home_product_items .home_product_items_feature div .product_price_text:hover {
+    color: rgb(172, 113, 36);
+}
+
+.home_product_items .home_product_items_feature .home_product_items_feature_right_list li {
+    width: 99%;
+    height: fit-content;
+    margin-top: 7px;
+    overflow: visible;
+    text-align: left;
+}
+
+.home_product_items .home_product_items_feature .home_product_items_feature_left img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    position: relative;
+    bottom: 0px;
+    transition: bottom .5s;
+}
+
+.home_product_items .home_product_items_feature .home_product_items_feature_left img:hover {
+    bottom: 5px;
+}
+
+
+/* Responsive section */
+
+@media screen and (max-width:1100px) {
+    .home_product_items .home_product_items_feature {
+        width: 50%;
+        background: rgb(255, 255, 255);
+        display: flex;
+    }
+    .header_banner img {
+        background-color: #f1f1f1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 320px;
+    }
+    .content_head {
+        padding-right: 0%;
+    }
+    .home_product_items .home_product_items_feature .home_product_items_feature_right_list {
+        text-align: center;
+        padding-left: 2px;
+        list-style-type: none;
+        font-size: 90%;
+    }
+    .content div .brand_name {
+        margin-right: 0% !important;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .home_product_items .home_product_items_feature {
+        width: 100%;
+        background: rgb(255, 255, 255);
+        display: flex;
+    }
+    .header_banner img {
+        background-color: #f1f1f1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 150px;
+    }
+    .content_head {
+        padding-right: 0%;
+    }
+    .home_product_items .home_product_items_feature .home_product_items_feature_right_list {
+        text-align: center;
+        padding-left: 2px;
+        list-style-type: disc;
+        font-size: 100%;
+    }
+}

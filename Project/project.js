@@ -18,7 +18,6 @@ welcomeTitle.onclick = () => {
 let keySignInRemeberCheckBox = `sign_remember_check`;
 let keyCurrentUserSignIn = `current_user_sign_in`;
 let keyUsersLocalStorage = `users_data`;
-
 let modalSignUp = document.getElementById('id01');
 let modalSignIn = document.getElementById(`id02`);
 let nameInput = document.getElementById(`sign_up_name_input`);
@@ -37,16 +36,16 @@ let signInRemeberCheckBox = document.getElementById(`sign_in_remember_checkbox`)
 let signUpRemeberCheckBox = document.getElementById(`sign_up_remember_checkbox`);
 let modalSignUpStatusTitle = document.getElementById(`sign_up_status_title`);
 
+let userAdmin = {
+    user_name: `admin`,
+    password: `12345`,
+}
+let users = [userAdmin, ];
+
 function saveUsersDataForTheFirstTime() {
     if (isFirstTime()) {
         localStorage.setItem(keyUsersLocalStorage, JSON.stringify(users));
     }
-}
-
-function getUsersArray() {
-    let rawData = localStorage.getItem(keyUsersLocalStorage);
-    let usersArr = JSON.parse(rawData);
-    return usersArr;
 }
 
 function isFirstTime() {
@@ -118,7 +117,7 @@ function signOut() {
     signInBtn.style.display = `block`;
     signUpBtn.style.display = `block`;
     signOutBtn.style.display = `none`;
-    sideName.textContent = `no name`;
+    sideName.textContent = `Tên người dùng`;
     welcomeTitle.textContent = `Chào mừng bạn đến với TTAD. Xin hãy vui lòng đăng nhập`;
     setUserSignInIndex(-1);
 }
@@ -137,9 +136,7 @@ function modalSignUpOnclickCallback() {
     let newUser = {
         user_name: nameInput.value,
         password: repeatPasswordInput.value,
-        product_choices: [],
-        order_historys: [],
-    }
+    }    
     let rawData = localStorage.getItem(keyUsersLocalStorage);
     let usersArray = JSON.parse(rawData);
     usersArray.push(newUser);
@@ -173,11 +170,7 @@ function signUpOnclickCallback() {
     signUpRemeberCheckBox.checked = getSignRemeberCheck();
 }
 signUpBtn.onclick = () => {
-    if (getUsersArray().length > 100) {
-        notificationPopUp(`Bạn không thể đăng ký quá 100 tài khoản`);
-    } else {
-        document.getElementById('id01').style.display = 'block';
-    }
+    document.getElementById('id01').style.display = `block`;
 }
 signUpBtn.addEventListener(`click`, signUpOnclickCallback);
 

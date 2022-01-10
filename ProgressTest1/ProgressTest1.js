@@ -71,7 +71,7 @@ let option = prompt('Hi there, welcome to MindX employees database, what do you 
         alert('Done');
     }else if((option == 'Delete')){
         deleteEmployee = prompt('Enter the position you want to delete');
-        employees.splice(deleteEmployee,1);
+        employees.splice(deleteEmployee-1,1);
         alert('Done');
     }else{
         alert('This command is not supported');

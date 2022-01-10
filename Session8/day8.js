@@ -13,8 +13,8 @@
     function aoe(){
         alert('Age of Empires');
     };
-    setTimeout(aoe, 4);
-    setInterval(aoe, 4);
+    setTimeout(aoe, 4000);
+    setInterval(aoe, 4000);
 
 // 3. Read about function scope in this link then answer the following question
     // 3.1. Can a variable declared by let, in a function still exists after the function finishes running?

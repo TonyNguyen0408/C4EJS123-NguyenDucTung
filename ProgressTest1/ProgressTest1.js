@@ -11,6 +11,7 @@
 // let strUpperCase =  str[0].toUpperCase() + str.slice(1);
 // alert(strUpperCase);
 
+// Test
 // 3. Viết một chương trình xóa các phần tử trùng của một mảng và in ra kết quả.
 // let arr = prompt('Enter the array, separated by commas(,)');
 // let str = arr.split(',');

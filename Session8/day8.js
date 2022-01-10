@@ -1,4 +1,4 @@
-// STUDY
+// STUDY 123
 // 1. insertAdjacentHTML first parameter is the position where you put the new HTML into the container
 // Read this documentation, then read the following code
 // JS File:

@@ -12,13 +12,3 @@ colorPick.addEventListener("click", () => {
     document.body.style.backgroundColor = hexColor;
     colorCode.innerHTML = hexColor.toUpperCase();
 })
-
-function copy() {
-    let input = document.createElement("INPUT");
-    document.body.appendChild(input);
-    input.value = colorCode.innerHTML;
-    input.select();
-    input.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    document.body.removeChild(input);
-}
